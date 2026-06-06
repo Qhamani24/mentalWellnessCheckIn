@@ -116,6 +116,76 @@ body {
   color: #357ABD;
 }
 
+/* Article List Styling */
+.article-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 15px;
+  text-align: left;
+}
+
+.article-list li {
+  margin: 10px 0;
+}
+
+.article-list a {
+  text-decoration: none;
+  color: #4a90e2;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.article-list a:hover {
+  color: #357ABD;
+}
+
+
+.modal {
+  display: none; /* hidden until opened */
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background: rgba(0,0,0,0.6);
+}
+
+/* Meditation Playlist Styling */
+.track {
+  margin-bottom: 20px;
+}
+
+.track label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #4a90e2;
+}
+
+.track audio {
+  width: 100%;
+  max-width: 400px;
+  outline: none;
+}
+
+/* Service List Styling */
+.service-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 15px;
+  text-align: left;
+}
+
+.service-list li {
+  margin: 10px 0;
+  font-size: 0.95rem;
+  color: #333;
+}
+
 /* Resources Section */
 .resources-container {
   max-width: 500px;
