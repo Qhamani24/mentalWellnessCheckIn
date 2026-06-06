@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vibes on Vossie</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora&family=Patrick+Hand&family=Playfair+Display:wght@600;700&display=swap">
+  <link rel="stylesheet" href="css/handdrawn-forms.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="navbar">
+    <a href="index.html" class="logo">Vibes on Vossie</a>
+    <nav>
+      <ul>
+        <li><a href="dailyCheckIn.html">Daily Check-In</a></li>
+        <li><a href="moodTracker.html">Mood Tracker</a></li>
+        <li><a href="wellnessResources.html">Wellness Resources</a></li>
+      </ul>
+      </nav>
+
+  </header>
+
+
+  <!-- Login Form -->
+  <section class="form-container">
+    <div class="form-header">
+      <h1>Welcome Back</h1>
+      <p class="intro">Sign in to your mood check-in space with a calm, hand-sketched interface.</p>
+    </div>
+
+    <form id="loginForm" action="dailyCheckIn.html" method="post">
+      <div class="input-box">
+        <span class="icon"><i class="fas fa-envelope"></i></span>
+        <input type="email" name="email" placeholder="Enter Student Email" required>
+      </div>
+
+      <div class="input-box">
+        <span class="icon"><i class="fas fa-lock"></i></span>
+        <input type="password" name="password" placeholder="Enter Password" required>
+      </div>
+
+      <div class="form-meta">
+        <label class="checkbox-label">
+          <input type="checkbox" name="remember">
+          Remember me
+        </label>
+        <a href="#" class="forgot-link">Forgot password?</a>
+      </div>
+
+      <button type="submit" class="btn">Login</button>
+
+      <p class="switch-form">Don't have an account? <a href="hackathonSignUp.html">Sign up</a></p>
+    </form>
+  </section>
+
+</body>
+</html>

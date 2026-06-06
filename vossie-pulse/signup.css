@@ -1,0 +1,155 @@
+/* General Page Styling */
+body {
+  font-family: 'Lora', serif;
+  background: linear-gradient(135deg, #f5f9ff, #eaf3ff);
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar */
+.navbar {
+  background: #4a90e2; /* calming blue */
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.navbar ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Form Container */
+.form-container {
+  max-width: 450px;
+  margin: 50px auto;
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.form-header h1 {
+  font-family: 'Playfair Display', serif;
+  color: #4a90e2;
+  margin-bottom: 10px;
+}
+
+.form-header .intro {
+  font-family: 'Patrick Hand', cursive;
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* Input Boxes */
+.input-box {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.input-box .icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  color: #4a90e2;
+  font-size: 16px;
+  pointer-events: none; /* prevents icon from blocking clicks */
+}
+
+.input-box input, 
+.input-box select {
+  width: 100%;
+  padding: 12px 45px; /* extra left padding so text doesn’t overlap icon */
+  border: 1px solid #d8e3f0;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+  transition: border 0.3s;
+  box-sizing: border-box; /* ensures padding doesn’t break layout */
+}
+
+.input-box input:focus, 
+.input-box select:focus {
+  border-color: #4a90e2;
+}
+
+/* Phone Input */
+.phone-input {
+  display: flex;
+  align-items: center;
+  border: 1px solid #d8e3f0;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.phone-input .country-code {
+  background: #eaf3ff;
+  color: #4a90e2;
+  font-weight: 600;
+  padding: 10px 12px;
+  white-space: nowrap;
+}
+
+.phone-input input {
+  flex: 1;
+  border: none;
+  padding: 10px;
+  font-size: 14px;
+  outline: none;
+}
+
+/* Button */
+.btn {
+  width: 100%;
+  padding: 12px;
+  background: #4a90e2;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #357ABD;
+}
+
+/* Switch Form */
+.switch-form {
+  margin-top: 15px;
+  font-size: 0.9rem;
+}
+
+.switch-form a {
+  color: #4a90e2;
+  text-decoration: none;
+  font-weight: 600;
+}
+.switch-form a:hover {
+  text-decoration: underline;
+}

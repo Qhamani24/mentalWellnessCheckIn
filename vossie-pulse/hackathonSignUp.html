@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vibes on Vossie</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora&family=Patrick+Hand&family=Playfair+Display:wght@600;700&display=swap">
+  <link rel="stylesheet" href="signup.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="navbar">
+    <a href="index.html" class="logo">Vibes on Vossie</a>
+    <nav>
+      <ul>
+        <li><a href="dailyCheckIn.html">Daily Check-In</a></li>
+        <li><a href="moodTracker.html">Mood Tracker</a></li>
+        <li><a href="wellnessResources.html">Wellness Resources</a></li>
+      </ul>
+      </nav>
+
+      
+  </header>
+
+
+  <!-- Registration Form -->
+  <section class="form-container">
+    <div class="form-header">
+      <h1>Create Your Account</h1>
+      <p class="intro">Welcome to Vibes on Vossie — sign up and start tracking your wellness journey.</p>
+    </div>
+    <form id="signupForm" action="dailyCheckIn.html" method="post">
+      
+      <!-- First Name -->
+      <div class="input-box">
+        <span class="icon"><i class="fas fa-user"></i></span>
+        <input type="text" name="firstName" placeholder="Enter First Name" required>
+      </div>
+
+      <!-- Last Name -->
+      <div class="input-box">
+        <span class="icon"><i class="fas fa-user"></i></span>
+        <input type="text" name="lastName" placeholder="Enter Last Name" required>
+        <input type="hidden" name="userType" value="seller"> <!-- Hidden field to specify user type -->
+      </div>  
+
+      <!-- Email -->
+      <div class="input-box">
+        <span class="icon"><i class="fas fa-envelope"></i></span>
+        <input type="email" name="email" placeholder="Enter Student Email" required>
+      </div>
+
+      <!-- Date of Birth -->
+      <div class="input-box">
+        <span class="icon"><i class="fas fa-calendar"></i></span>
+        <input type="date" name="dateOfBirth" placeholder="Enter Date of Birth" required>
+      </div>
+
+      <!-- Mobile Number -->
+      <div class="input-box">
+        <label for="mobile">Mobile Number</label>
+      <div class="phone-input">
+        <span class="country-code">+27 (ZA)</span>
+        <input type="tel" id="mobile" name="mobile" placeholder="0821234567" pattern="[0-9]{10}" maxlength="10" required> <!-- Pattern and maxlength to ensure valid South African mobile number format -->
+     </div>
+     </div>
+
+      <!-- Password -->
+      <div class="input-box">
+        <span class="icon"><i class="fas fa-lock"></i></span>
+        <input type="password" name="password" placeholder="Enter Password" required>
+      </div>
+
+      <!-- Confirm Password -->
+      <div class="input-box">
+        <span class="icon"><i class="fas fa-lock"></i></span>
+        <input type="password" name="confirmPassword" placeholder="Confirm Password" required>
+      </div>
+
+      <!-- Campus-->
+       <div class="input-box">
+        <span class="icon"><i class="fas fa-university"></i></span>
+        <select name="campus" required>
+          <option value="" disabled selected>Select Campus</option>
+          <option value="eastLondon">East London</option>
+          <option value="midrand">Midrand</option>
+          <option value="pretoria">Pretoria</option>
+          <option value="gauteng">Bloemfontein</option>
+          <option value="other">Tygervalley</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+
+      <!-- Submit -->
+      <button type="submit" class="btn">Sign Up</button>
+
+      <p class="switch-form">Already have an account? <a href="hackathonLoginPage.html">Login</a></p>
+    </form>
+  </section>
+
+</body>
+</html>
