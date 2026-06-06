@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wellness Resources</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora&family=Patrick+Hand&family=Playfair+Display:wght@600;700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="wellnessResources.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="navbar">
+    <a href="index.html" class="logo">Vibes on Vossie</a>
+    <nav>
+      <ul>
+        <li><a href="dailyCheckIn.html">Daily Check-In</a></li>
+        <li><a href="moodTracker.html">Mood Tracker</a></li>
+        <li><a href="wellnessResources.html" class="active">Wellness Resources</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Wellness Resources Section -->
+  <section class="resources-container">
+    <h1>Get Support & Self-Care Tips</h1>
+
+    <!-- Campus Counseling Center -->
+<div class="resource-card" onclick="openModal('counselingModal')">
+  <i class="fas fa-university"></i>
+  <span>Campus Counseling Center</span>
+</div>
+
+<!-- Modal -->
+<div id="counselingModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('counselingModal')">&times;</span>
+    <h2>Campus Counseling Center Contacts</h2>
+    <div class="contact">
+      <h3>Savannah Naick</h3>
+      <p><strong>Teams:</strong> Savannah Naick</p>
+      <p><strong>Email: </strong><a href="mailto:savannah.naick@eduvos.com">savannah.naick@eduvos.com</a></p>
+      <p><strong>Work No:</strong> <a href="tel:0831234567">083 123 4567</a></p>
+    </div>
+    <div class="contact">
+      <h3>Babalo Lutholi</h3>
+      <p><strong>Teams:</strong> Babalo Lutholi</p>
+      <p><strong>Email: </strong><a href="mailto:babalo.lutholi@eduvos.com">babalo.lutholi@eduvos.com</a></p>
+      <p><strong>Work No:</strong> <a href="tel:0606339378">060 633 9378</a></p>
+    </div>
+  </div>
+</div>
+
+
+    <!-- Stress Management Tips -->
+<div class="resource-card" onclick="openModal('stressModal')">
+  <i class="fas fa-heart"></i>
+  <span>Stress Management Tips</span>
+</div>
+
+<!-- Modal for Stress Management -->
+<div id="stressModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('stressModal')">&times;</span>
+    <h2>Stress Management Resources</h2>
+    <p>Here are some helpful guides and tips:</p>
+    <ul class="pdf-list">
+      <li><a href="pdf/WellnessGuide.pdf" target="_blank"><i class="fas fa-file-pdf"></i> Wellness Guide</a></li>
+      <li><a href="pdf/Stress_Control.pdf" target="_blank"><i class="fas fa-file-pdf"></i> Stress Tips</a></li>
+      <li><a href="pdf/MindfulnessExercises.pdf" target="_blank"><i class="fas fa-file-pdf"></i> Mindfulness Exercises</a></li>
+      <li><a href="pdf/ProblemSolving_Presentation.pdf" target="_blank"><i class="fas fa-file-pdf"></i> Problem Solving</a></li>
+    </ul>
+  </div>
+</div>
+
+
+    <div class="resource-card">
+      <i class="fas fa-spa"></i>
+      <span>Guided Meditation</span>
+    </div>
+
+    <div class="resource-card">
+      <i class="fas fa-comments"></i>
+      <span>Counselling, Containment, Referral Services</span>
+    </div>
+
+    <div class="resource-card">
+      <i class="fas fa-phone"></i>
+      <a href="tel:0800 008 206">24/7 Helpline: 0800 008 206</a>
+    </div>
+
+    <div class="resource-card">
+      <i class="fas fa-book-open"></i>
+      <span>Mental Health Articles</span>
+    </div>
+
+    <div class="resource-card">
+      <i class="fas fa-music"></i>
+      <span>Relaxation Exercises</span>
+    </div>
+  </section>
+  
+  <script>
+    // Modal functionality
+    function openModal(modalId) {
+      document.getElementById(modalId).style.display = "block";
+    }
+
+    function closeModal(modalId) {
+      document.getElementById(modalId).style.display = "none";
+    }
+
+    // Close modal when clicking outside of it
+    window.onclick = function(event) {
+      const counselingModal = document.getElementById('counselingModal');
+      if (event.target === counselingModal) {
+        counselingModal.style.display = "none";
+      }
+    }   
+    </script>
+
+</body>
+</html>
