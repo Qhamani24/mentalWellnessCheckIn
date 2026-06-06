@@ -1,0 +1,33 @@
+<!-- Main Application Container (Simulating the phone frame in the sketch) -->
+<main class="app-container">
+    
+    <!-- 1. Dynamic Greeting Header -->
+    <header class="greeting-header">
+        <h1 id="dynamic-greeting">Good Morning, <span id="user-display-name">Username</span></h1>
+    </header>
+
+    <!-- 2. Interactive Mood Tracking Section -->
+    <section class="mood-tracker-section">
+        <label for="happiness-slider" class="section-title">How are you feeling this morning?</label>
+        
+        <div class="slider-wrapper">
+            <span class="slider-label label-left">Sad 0</span>
+            <input type="range" id="happiness-slider" min="0" max="10" value="5" step="1">
+            <span class="slider-label label-right">Happy 10</span>
+        </div>
+    </section>
+
+    <!-- 3. Optional Qualitative Notes Section -->
+    <section class="notes-section">
+        <label for="mood-notes" class="section-title">Describe how you feel (optional)</label>
+        <textarea id="mood-notes" placeholder="Type what's on your mind..."></textarea>
+    </section>
+
+    <!-- 4. Dynamic Motivation Statement Component -->
+    <section class="motivation-container">
+        <div id="motivation-box" class="motivation-card">
+            <p id="motivation-text">Move the slider to see your morning insight.</p>
+        </div>
+    </section>
+
+</main>
