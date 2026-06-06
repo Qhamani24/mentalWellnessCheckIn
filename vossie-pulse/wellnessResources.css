@@ -116,6 +116,45 @@ body {
   color: #357ABD;
 }
 
+/* Article List Styling */
+.article-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 15px;
+  text-align: left;
+}
+
+.article-list li {
+  margin: 10px 0;
+}
+
+.article-list a {
+  text-decoration: none;
+  color: #4a90e2;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.article-list a:hover {
+  color: #357ABD;
+}
+
+/* Service List Styling */
+.service-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 15px;
+  text-align: left;
+}
+
+.service-list li {
+  margin: 10px 0;
+  font-size: 0.95rem;
+  color: #333;
+}
+
 /* Resources Section */
 .resources-container {
   max-width: 500px;

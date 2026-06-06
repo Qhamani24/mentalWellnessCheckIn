@@ -80,25 +80,105 @@
       <span>Guided Meditation</span>
     </div>
 
-    <div class="resource-card">
-      <i class="fas fa-comments"></i>
-      <span>Counselling, Containment, Referral Services</span>
-    </div>
+   <!-- Counselling, Containment, Referral Services -->
+<div class="resource-card" onclick="openModal('counsellingModal')">
+  <i class="fas fa-comments"></i>
+  <span>Counselling, Containment, Referral Services</span>
+</div>
+
+<!-- Modal -->
+<div id="counsellingModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('counsellingModal')">&times;</span>
+    <h2>Counselling, Containment & Referral Services</h2>
+    <p>Here are the available support options:</p>
+    <ul class="service-list">
+      <li><strong>Individual Counselling:</strong> One-on-one sessions with trained professionals.</li>
+      <li><strong>Containment Support:</strong> Immediate emotional support during crises.</li>
+      <li><strong>Referral Services:</strong> Guidance to external specialists or long-term care providers.</li>
+    </ul>
+    <p>For urgent assistance, please contact your campus wellness office.</p>
+  </div>
+</div>
+
 
     <div class="resource-card">
       <i class="fas fa-phone"></i>
       <a href="tel:0800 008 206">24/7 Helpline: 0800 008 206</a>
     </div>
 
-    <div class="resource-card">
-      <i class="fas fa-book-open"></i>
-      <span>Mental Health Articles</span>
+    <!-- Mental Health Articles -->
+<div class="resource-card" onclick="openModal('articlesModal')">
+  <i class="fas fa-book-open"></i>
+  <span>Mental Health Articles</span>
+</div>
+
+<!-- Modal for Mental Health Articles -->
+<div id="articlesModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('articlesModal')">&times;</span>
+    <h2>Mental Health Articles</h2>
+    <p>Explore these helpful reads:</p>
+    <ul class="article-list">
+      <li><a href="article1.pdf" target="_blank"><i class="fas fa-file-pdf"></i> Understanding Stress and Anxiety</a></li>
+      <li><a href="article2.pdf" target="_blank"><i class="fas fa-file-pdf"></i> Building Emotional Resilience</a></li>
+      <li><a href="article3.pdf" target="_blank"><i class="fas fa-file-pdf"></i> Mindfulness for Students</a></li>
+    </ul>
+  </div>
+</div>
+
+
+   <!-- Relaxation Exercises -->
+<div class="resource-card" onclick="openModal('relaxModal')">
+  <i class="fas fa-music"></i>
+  <span>Relaxation Exercises</span>
+</div>
+
+<!-- Modal for Relaxation Exercises -->
+<div id="relaxModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('relaxModal')">&times;</span>
+    <h2>Relaxation Exercises</h2>
+    <p>Try these calming techniques to reduce stress and restore balance:</p>
+    <ul class="exercise-list">
+      <li><strong>Deep Breathing:</strong> Inhale slowly for 4 seconds, hold for 4, exhale for 6. Repeat 5 times.</li>
+      <li><strong>Progressive Muscle Relaxation:</strong> Tense each muscle group for 5 seconds, then release. Start from toes up to shoulders.</li>
+      <li><strong>Guided Imagery:</strong> Close your eyes and imagine a peaceful place (beach, forest, or garden). Focus on the sounds and sensations.</li>
+      <li><strong>Mindful Stretching:</strong> Gentle neck rolls, shoulder shrugs, and slow arm stretches while focusing on your breath.</li>
+      <li><strong>Music Therapy:</strong> Play calming instrumental music or nature sounds for 10 minutes to reset your mood.</li>
+    </ul>
+
+    <!-- Embedded Audio Playlist -->
+    <div class="audio-player">
+      <p><strong>Choose a relaxation track:</strong></p>
+      <div class="track">
+        <label>🌧 Rain Sounds</label>
+        <audio controls>
+          <source src="audio/Rain Sounds ASMR - Heavy Rain on Window - 30 Minute Rain Sounds for Sleep, ADHD, Fall Asleep Fast [GA1D88HF0xE].mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+      <div class="track">
+        <label>🌊 Ocean Waves</label>
+        <audio controls>
+          <source src="audio/Ocean Waves Crashing - Relaxing Sounds - Calming Relaxation Music For Sleeping - 1 Hour [PoAeFpUB1hA].mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+      <div class="track">
+        <label>🌲 Forest Ambience</label>
+        <audio controls>
+          <source src="audio/Short 10 Min Nature Sounds Meditation - Relaxing Forest Morning Birds Chirping - Calm Sleeping Sound [DqewBvd-bAA].mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
     </div>
 
-    <div class="resource-card">
-      <i class="fas fa-music"></i>
-      <span>Relaxation Exercises</span>
-    </div>
+    <p>Tip: Choose one exercise daily to build a consistent relaxation routine.</p>
+  </div>
+</div>
+
+
   </section>
   
   <script>
