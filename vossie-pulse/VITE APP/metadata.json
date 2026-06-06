@@ -1,0 +1,6 @@
+{
+  "name": "Pulse",
+  "description": "A student wellbeing and reflection companion that helps track daily emotions and community participation.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
